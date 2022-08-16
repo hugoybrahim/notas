@@ -86,12 +86,12 @@
                                         @csrf
                                         <div class="p-6 space-y-6">
                                             <select multiple name="categoriesm[]" id="categoriesm" class="border p-3 w-full flex rounded-lg ">
-                                                @foreach (auth()->user()->categories as $categorie)
+                                                {{-- @foreach (auth()->user()->categories as $categorie)
                                                     @php $key = (array_search($categorie->id, array_column(json_decode( json_encode($note->categoriasnotas), true), 'id_categories'))) @endphp
                                                     <option value="{{ $categorie->id }}" {{ ($key === false) ? '' : 'disabled' }}>
                                                         {{ $categorie->nombre }}
                                                     </option>
-                                                @endforeach
+                                                @endforeach --}}
                                             </select>
                                         </div>
                                         <!-- Modal footer -->
