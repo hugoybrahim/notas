@@ -42,7 +42,7 @@
                         Categoria
                     </label>
                     <select multiple name="categorie_id[]" id="categorie_id" class="border p-3 w-full flex rounded-lg ">
-                        @foreach ($categories as $categorie)
+                        @foreach (auth()->user()->categories as $categorie)
 
                             <option value="{{ $categorie->id }}">{{ $categorie->nombre }}</option>
                             

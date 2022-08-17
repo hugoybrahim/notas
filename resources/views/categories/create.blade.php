@@ -2,7 +2,7 @@
 
 
 @section('titulo')
-    Crear nueva nota
+    Crear nueva categoria
 @endsection
 
 @section('contenido')
@@ -18,7 +18,7 @@
                         </p>
                 @enderror
                <button type="submit" class="bg-sky-600 hover:bg-sky-700 transition-colors cursor-pointer
-               uppercase font-bold  p-2 text-white rounded-lg" >Crear</button>
+               uppercase font-bold  p-2 text-white rounded-lg mt-4 float-right" >Crear</button>
 
 
             </form>
